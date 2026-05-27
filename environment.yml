@@ -1,0 +1,30 @@
+name: sam2point
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pytorch==2.2.0
+  - torchvision==0.17.0
+  - torchaudio
+  - pytorch-cuda=12.1
+  - cuda-nvcc=12.1
+  - cuda-toolkit=12.1
+  - numpy<2.0
+  - scipy
+  - matplotlib
+  - pillow
+  - tqdm
+  - ninja
+  - pip:
+    - plotly
+    - open3d
+    - opencv-python
+    - hydra-core
+    - gradio
+    - gdown
+    - iopath
+    - laspy[lazrs,pyproj]
